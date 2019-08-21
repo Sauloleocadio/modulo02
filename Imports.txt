@@ -1,0 +1,31 @@
+{Iniciar projeto}
+yarn init -y
+
+{Instalação do server}
+yarn add express
+
+{Sintaxe de import no lugar de required / estartar servidor automático}
+yarn add sucrase nodemon -D
+
+{Sintaxe de eslint}
+yarn add eslint -D
+yarn eslint --init
+yarn
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+yarn eslint --fix src --ext .js
+
+{Instalação Sequelize}
+yarn add sequelize
+yarn add sequelize-cli -D
+
+{Instalação no database para rodar sequelize no postgres}
+yarn add pg pg-hstore
+
+{Criação de migrations no sequelize}
+yarn sequelize migration:create --name=create-users
+
+{Testar migrations no sequelize}
+yarn sequelize db:migrate
+
+{Retirar uma migrations no sequelize}
+yarn sequelize db:migrate:undo

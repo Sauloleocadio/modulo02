@@ -1,0 +1,7 @@
+git init -                   { Para startar }
+git remote -v  -             { Para ver git startados }
+git remote add origin -      { adicionar } / https://github.com/Sauloleocadio/goBarber.git
+git commit -m "first commit" { Escrever um comentario }
+git push origin master -     { Para enviar }
+git remote rm origin -       { Para remover }
+
